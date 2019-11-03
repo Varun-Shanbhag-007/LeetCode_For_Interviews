@@ -1,3 +1,10 @@
+/*
+Given list of reviews, list of competitors, N, return most frequently mentioned top N competitors in the reviews.
+*/
+
+
+
+//SOLUTION
 // "static void main" must be defined in a public class.
 public class Main {
     public static void main(String[] args) {
