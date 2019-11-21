@@ -66,4 +66,23 @@ class SubtreeofAnotherTree {
         /* now recur on right subtree */
          printPreorder(node.right,sb);
     }
+     /*
+     Talwinder's Solution
+      public boolean isSubtree(TreeNode s, TreeNode t) {
+        String res1 = preOrder(s, "");
+        String res2 = preOrder(t, "");
+        System.out.println("res1 = "+res1);
+        System.out.println("res2 ="+res2);
+        if(res1.contains(res2))
+            return true;
+        return false;
+    }
+    public String preOrder(TreeNode r, String res){
+        if(r == null){
+            return "null";
+        }
+        res += "#" + r.val + ',' + preOrder(r.left, res) + ',' + preOrder(r.right, res);
+        return res;
+    }
+     */
 }
